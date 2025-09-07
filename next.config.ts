@@ -11,7 +11,8 @@ const nextConfig: NextConfig = {
       'localhost', 
       'your-backend-domain.com',
       'practical-portal-backend.vercel.app',
-      'practical-portal-backend.onrender.com'
+      'practical-portal-backend.onrender.com',
+      'lh3.googleusercontent.com' // Allow Google profile pictures
     ],
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60,
