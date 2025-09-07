@@ -16,21 +16,21 @@ export function ProblemSection() {
       role: "Student",
       icon: <GraduationCap className="w-6 h-6" />,
       quote: "I spend more time taking photos of my code than actually writing it. The quality is terrible and teachers can't even read it!",
-      name: "Sarah, Computer Science Student",
+      name: "Computer Science Student",
       color: "bg-blue-500/10 border-blue-500/20 text-blue-600"
     },
     {
       role: "Teacher", 
       icon: <User className="w-6 h-6" />,
       quote: "My WhatsApp is flooded with blurry code screenshots. I can't organize submissions or give proper feedback. It's chaos!",
-      name: "Prof. Johnson, CS Department",
+      name: "Prof of Computer Science Department",
       color: "bg-purple-500/10 border-purple-500/20 text-purple-600"
     },
     {
       role: "Admin",
       icon: <MessageCircle className="w-6 h-6" />,
       quote: "Tracking practical submissions is a nightmare. No centralized system, lost submissions, and zero accountability.",
-      name: "Dr. Smith, Department Head",
+      name: "Department Head",
       color: "bg-indigo-500/10 border-indigo-500/20 text-indigo-600"
     }
   ];
