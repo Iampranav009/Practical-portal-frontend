@@ -78,8 +78,8 @@ export function SidebarDrawer({ isOpen, onClose, className = "" }: SidebarDrawer
           }
         });
 
-        if (response.success && response.data.profile_picture_url) {
-          setProfilePicture(response.data.profile_picture_url);
+        if (response.success && response.data.profilePictureUrl) {
+          setProfilePicture(response.data.profilePictureUrl);
         }
       } catch (error) {
         console.error('Error fetching profile picture:', error);
