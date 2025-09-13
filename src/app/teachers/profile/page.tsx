@@ -62,7 +62,7 @@ export default function TeacherProfilePage() {
             email: response.data.email || "",
             collegeName: response.data.college_name || "",
             contactNumber: response.data.contact_number || "",
-            profilePicture: response.data.profile_picture_url || ""
+            profilePicture: response.data.profilePictureUrl || ""
           }
           setProfile(profileData)
           setPreviousProfilePicture(profileData.profilePicture)
