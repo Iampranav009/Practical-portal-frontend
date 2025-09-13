@@ -53,7 +53,7 @@ interface BatchSubmission {
   student_roll_number?: string
   student_year?: string
   student_subject?: string
-  profile_picture_url?: string
+  profilePictureUrl?: string
 }
 
 interface TeacherReviewFeedProps {
