@@ -147,7 +147,7 @@ export function RefinedBatchFeed({ batchId, refreshTrigger, onEditPost }: Refine
     created_at: string;
     student_name: string;
     student_email: string;
-    profile_picture_url?: string;
+    profilePictureUrl?: string;
     student_roll_number?: string;
     student_year?: string;
     student_subject?: string;
@@ -235,7 +235,7 @@ export function RefinedBatchFeed({ batchId, refreshTrigger, onEditPost }: Refine
       author: {
         name: submission.student_name,
         username: submission.student_email.split('@')[0],
-        avatar: submission.profile_picture_url || '',
+        avatar: submission.profilePictureUrl || '',
         rollNumber: submission.student_roll_number,
         year: submission.student_year,
         subject: submission.student_subject
