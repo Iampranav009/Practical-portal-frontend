@@ -32,14 +32,14 @@ interface BatchDetails {
   teacher_name: string
   teacher_email: string
   teacher_contact_number?: string
-  teacher_profile_picture_url?: string
+  teacher_profilePictureUrl?: string
   members: Array<{
     user_id: number
     name: string
     email: string
     role: 'student' | 'teacher'
     joined_at: string
-    profile_picture_url?: string
+    profilePictureUrl?: string
   }>
   member_count: number
 }
@@ -114,7 +114,7 @@ export function BatchRightPanel({ batch, stats }: BatchRightPanelProps) {
             <div className="flex items-center space-x-2">
               <Avatar className="h-8 w-8">
                 <AvatarImage 
-                  src={batch.teacher_profile_picture_url || batch.members.find(m => m.role === 'teacher')?.profile_picture_url} 
+                  src={batch.teacher_profilePictureUrl || batch.members.find(m => m.role === 'teacher')?.profilePictureUrl}  
                   alt={`${batch.teacher_name} profile`}
                 />
                 <AvatarFallback className="bg-blue-100 text-blue-600 text-xs font-semibold">
