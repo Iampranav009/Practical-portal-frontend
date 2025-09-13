@@ -625,7 +625,7 @@ export function TeacherReviewFeed({ batchId, onSubmissionUpdated }: TeacherRevie
                     <div className="flex items-center gap-3">
                       <Avatar className="h-12 w-12">
                         <AvatarImage 
-                          src={submission.profile_picture_url} 
+                          src={submission.profilePictureUrl} 
                           alt={submission.student_name}
                           className="object-cover"
                         />
