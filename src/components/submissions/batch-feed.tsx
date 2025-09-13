@@ -36,7 +36,7 @@ interface Submission {
   student_roll_number?: string
   student_year?: string
   student_subject?: string
-  profile_picture_url?: string
+  profilePictureUrl?: string
 }
 
 interface BatchFeedProps {
@@ -490,7 +490,7 @@ export function BatchFeed({ batchId, refreshTrigger }: BatchFeedProps) {
             <div className="flex items-start justify-between">
               <div className="flex items-center space-x-3">
                 <Avatar className="h-10 w-10">
-                  <AvatarImage src={submission.profile_picture_url} />
+                 <AvatarImage src={submission.profilePictureUrl} />
                   <AvatarFallback>
                     {submission.student_name.charAt(0).toUpperCase()}
                   </AvatarFallback>
