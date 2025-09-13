@@ -47,7 +47,7 @@ interface BatchMember {
   email: string
   role: 'student' | 'teacher'
   joined_at: string
-  profile_picture_url?: string
+  profilePictureUrl?: string
 }
 
 interface BatchDetails {
