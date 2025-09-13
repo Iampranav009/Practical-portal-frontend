@@ -30,7 +30,7 @@ interface BatchMember {
   email: string
   role: 'student' | 'teacher'
   joined_at: string
-  profile_picture_url?: string
+  profilePictureUrl?: string
   roll_number?: string
 }
 
@@ -45,7 +45,7 @@ interface BatchDetails {
   teacher_name: string
   teacher_email: string
   teacher_contact_number?: string
-  teacher_profile_picture_url?: string
+  teacher_profilePictureUrl?: string
   members: BatchMember[]
   member_count: number
 }
@@ -165,7 +165,7 @@ export function BatchInfoModal({ isOpen, onClose, batch }: BatchInfoModalProps) 
                     {/* Teacher Profile Picture - larger size for better visibility */}
                     <Avatar className="h-16 w-16">
                       <AvatarImage 
-                        src={batch.teacher_profile_picture_url || teacherMember?.profile_picture_url} 
+                        src={batch.teacher_profilePictureUrl || teacherMember?.profilePictureUrl}  
                         alt={`${batch.teacher_name} profile`}
                       />
                       <AvatarFallback className="bg-blue-100 text-blue-600 text-lg font-semibold">
@@ -235,7 +235,7 @@ export function BatchInfoModal({ isOpen, onClose, batch }: BatchInfoModalProps) 
                         <div className="flex items-center justify-between">
                           <div className="flex items-center space-x-3">
                             <Avatar className="h-10 w-10">
-                              <AvatarImage src={member.profile_picture_url} />
+                              <AvatarImage src={member.profilePictureUrl} />
                               <AvatarFallback className="bg-blue-100 text-blue-600">
                                 {member.name.charAt(0).toUpperCase()}
                               </AvatarFallback>
