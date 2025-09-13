@@ -69,7 +69,7 @@ export default function StudentProfilePage() {
             subject: response.data.subject || "",
             batchName: response.data.batch_name || "",
             rollNumber: response.data.roll_number || "",
-            profilePicture: response.data.profile_picture_url || ""
+            profilePicture: response.data.profilePictureUrl || ""
           }
           setProfile(profileData)
           setPreviousProfilePicture(profileData.profilePicture)
